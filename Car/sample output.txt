@@ -1,0 +1,19 @@
+BMW M4 engine started.
+BMW M4 is driving. Speed: 20 km/h | Fuel: 45%
+Tesla Model S engine started.
+Tesla Model S Autopilot set to: true
+--- BMW M4 Status ---
+Color: Black
+Speed: 20 km/h
+Fuel Level: 45%
+Engine On: true
+Autopilot: false
+
+--- Tesla Model S Status ---
+Color: Red
+Speed: 0 km/h
+Fuel Level: 50%
+Engine On: true
+Autopilot: true
+
+BMW M4 engine stopped.

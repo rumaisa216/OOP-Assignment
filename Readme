@@ -1,0 +1,124 @@
+# Object-Oriented Programming 
+
+## Week 1 Lab
+
+**Student:** Rumaisa Javed 
+**Seat No:** 43 
+**Course:** Object-Oriented Programming (Week 1 Lab) 
+**Course Supervisor:** Dr. Humera Tariq
+
+
+## Overview
+
+This repository contains my Week 1 Lab submission for Object-Oriented Programming. The lab focuses on designing real-world objects using OOP concepts such as encapsulation, method overloading, edge-case handling, and reference variables in Java.
+
+It includes:
+* Car Class Demo (Part A of the assignment: Encapsulation, State Management, and Autopilot functionality)
+* Calculator Class Demo** (Part B of the assignment: Basic Arithmetic, Edge-case handling, Power, Modulus, and Varargs)
+* UML digrams of both
+* Sample Outputs for both programs matching exact console execution
+
+
+
+## Folder Structure
+
+```text
+week01_RumaisaJaved_43/
+├── Readme.md
+├── Car/
+│   ├── car.java                 # Car class: encapsulated attributes, engine control, autopilot
+│   ├── main.java                # Driver: creates & tests bmw and tesla objects
+│   └── sample_output.txt        # Program execution output
+│
+└── Calculator/
+    ├── Calculator.java          # Calculator class: arithmetic, edge cases, varargs
+    ├── Main.java                # Driver: tests operations, edge cases, and overloaded methods
+    └── sample_output.txt        # Program execution output
+
+## How to Compile & Run
+   **Running the Car Program:
+Bash
+cd Car
+javac car.java main.java
+java main
+
+Requirement: Requires JDK 17 or 
+
+    ##Car Class Features
+**Category 
+**Details
+
+***Attributes:
+
+	brand, color, speed, fuelLevel (default 50%), engineOn, autopilotEnabled
+
+**8Behaviours:
+
+	setDetails(), startEngine(), stopEngine(), drive(), refuel(), toggleAutopilot(), displayState()
+
+***Rules Enforced:
+
+Cannot start engine if fuel is $\le 0$% · Cannot drive or enable Autopilot while engine is OFF · stopEngine() resets speed, engine state, and disables autopilot · refuel() caps maximum fuel at 100%
+
+***Demonstrationmain:
+
+.java creates two independent car objects (bmw and tesla), demonstrating independent heap memory allocation and state management.
+
+
+Running the Calculator Program
+
+cd Calculator
+javac Calculator.java Main.java
+java Main
+Requirement: Requires JDK 17
+
+  ## Calculator Class Features
+**Category	
+
+**Details
+
+***Base Operations
+"add(), subtract(), multiply(), divide()"
+
+***Added Operations
+"modulus(), power() (Math.pow)"
+
+***Method Overloading
+add(double... numbers) using Varargs to accept flexible quantity of operands
+
+***Error Handling
+"divide() and modulus() detect division/modulus by zero, print error messages to System.err, and return Double.NaN"
+
+***Demonstration
+"Main.java tests all operations including normal usage and edge cases (10 / 0, 10 % 0)."
+
+
+
+**Activity 1: Identification of Five Everyday Objects**
+------------------------------------------------------
+
+A structured worksheet where five common real-world entities are broken down into their fundamental Object-Oriented concepts:
+* **Attributes:** Properties or data fields representing the state of the object.
+* **Behaviours:** Actions or methods defining the capabilities and operations of the object.
+
+*(For detailed breakdowns, refer to `Activity 1.png`)*
+
+---
+
+**Exercise 2: Memory Allocation (Stack vs. Heap)**
+--------------------------------------------------
+
+A detailed memory layout illustration demonstrating runtime object storage in Java:
+* **Stack Area:** Holds local execution frames and reference pointers (`bmw` and `tesla`).
+* **Heap Area:** Dynamically allocates memory for the actual instantiated `car` objects containing their field values.
+
+This highlights that `bmw` and `tesla` are completely decoupled references pointing to distinct memory blocks in the heap. *(Refer to `Activity 2.png` for the complete visual representation)*
+
+---
+
+**General Notes**
+-----------------
+
+* **Compilation & Compatibility:** All `.java` files have been tested and verified to compile smoothly on **JDK 17+** without any warnings or errors.
+* **UML Consistency:** Class diagrams (`Car UML.png` and `Calculator UML.png`) strictly correspond to the implemented codebase regarding variable types, visibility modifiers, and method parameters.
+* **Documentation:** Inline comments are provided throughout the source files to outline constructor setup, class responsibilities, and operational logic.
